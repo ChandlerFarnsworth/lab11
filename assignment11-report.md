@@ -1,6 +1,8 @@
 # Assignment #11 – Discussion Report
 
-**Form URL:** _[paste the live URL of your uploaded form here]_
+**Form URL:** https://chandlerfarnsworth.github.io/lab11/forms/form-exercise1(one).html
+
+_(Note: this link only goes live once GitHub Pages is enabled for this repo — see README.md.)_
 
 Adding proper semantic structure made the biggest difference in usability and accessibility for this form. Marking up the page title as an `<h1>`, giving the page a descriptive `<title>`, and wrapping each related group of fields in `<fieldset>`/`<legend>` elements turned what was previously a flat wall of text into something a screen reader can navigate meaningfully. Before these changes, tabbing through the form announced almost nothing about what each field was for; now the "Speaker Info" and "Type of Presentation" legends are read aloud as the user enters each group, so they always know which section they are in. The most important change was explicitly associating every `<label>` with its input using the `for`/`id` pairing. This means a screen reader speaks the field's name as soon as focus lands on it, and it also enlarges the clickable target—clicking the label text now selects the radio button or moves focus into the text field, which helps people with motor impairments who struggle with small targets.
 
