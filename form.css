@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+/* form styling */
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #222;
+}
+
+div#formcol1 {
+	float:left;
+	width: 100%;
+}
+
+h1 {
+	font-size: 1.6em;
+	margin-bottom: .3em;
+}
+
+.form-instructions {
+	background: #eef4fb;
+	border-left: 4px solid #2c6fb0;
+	padding: .6em .8em;
+	margin-bottom: 1em;
+	font-size: .9em;
+}
+
+.req-mark {
+	color: #BB3D2F;
+	font-weight: bold;
+}
+
+fieldset {
+	margin-bottom: 1em;
+	padding: .8em 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+legend {
+	font-weight: bold;
+	padding: 0 .4em;
+}
+
+/* align labels and line up the input fields */
+label {
+	margin-right: .3em;
+	width: 6.3em;  /* I made this deliberately wide - come up with your own optimal width */
+	display: inline-block; /* width will not work for "inline" elements such as "label";
+	                          therefore we set it to "inline-block" */
+	text-align: right;
+}
+
+/* we place the id formcol1 in front of the li element in order to
+   limit this formatting to the top part of the form */
+#formcol1 li {
+	list-style:none;
+	margin-bottom: .5em;
+}
+
+/* radio buttons: labels follow the control, so override the width/right-align
+   inherited from the general label rule and pull the choices closer together */
+.radio-group span {
+	margin-right: 1.2em;
+}
+
+.radio-group label {
+	width: auto;
+	text-align: left;
+	margin-left: .2em;
+}
+
+/* highlight required text fields with color (in addition to the asterisk) */
+#formcol1 input.reqfield {
+	background:#FF9;
+}
+
+/* highlight current keyboard / mouse focus */
+select:focus, select:active,
+input:focus, input:active,
+input:focus + label, input:active + label,
+label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;
+}
+
+.submit-button input {
+	padding: .5em 1em;
+	cursor: pointer;
+}
+
+
+/* end of form css */
